@@ -32,7 +32,11 @@
 >>>>>>>>>> ---
    #### *1. Introduction:*
   A soil moisture sensor is capable of measuring the moisture content in the   surrounding soil. It proves to be a valuable tool for keeping track of your garden or plant's water levels, making it an essential component of a smart garden.
-![soil moisture sensor](https://github.com/irhesri/Smart-Irrigation-System/blob/main/Part1%3A%20Irrigation%20System/Equipments/Soil%20Moisture%20Sensor.jpg)
+  
+<p align="center">
+  <img name="soil moisture sensor" src="https://github.com/irhesri/Smart-Irrigation-System/blob/main/Part1%3A%20Irrigation%20System/Equipments/Soil%20Moisture%20Sensor.jpg">
+</p>
+
 This sensor employs two probes to transmit current through the soil and subsequently gauge the resistance to determine the moisture level. Increased water content enhances soil conductivity, resulting in easier electricity flow (lower resistance), whereas dry soil exhibits poor conductivity, leading to higher resistance.
   #### *2. Specifications:*
   - Required voltage for working: 5V
@@ -40,8 +44,12 @@ This sensor employs two probes to transmit current through the soil and subseque
   - Required working temperature: 10°C~30°C
   - Type of interface: Analog
   - Depth of detection: 37mm
-  #### *3. Mounting:*
-  ![soil moisture sensor mounting](https://github.com/irhesri/Smart-Irrigation-System/blob/main/Part1%3A%20Irrigation%20System/Equipments/Soil%20Moisture%20Sensor.png)
+  #### *3. Mounting:* 
+  
+<p align="center">
+  <img name="soil moisture sensor mounting" src="https://github.com/irhesri/Smart-Irrigation-System/blob/main/Part1%3A%20Irrigation%20System/Equipments/Soil%20Moisture%20Sensor.png">
+</p>
+
   #### *4. Code Functions:*
 In order to use our moisture sensors it is necessary for us to perform a calibration process. It appears that each of these devices possesses its qualities and even sensors obtained from the same batch may have varying characteristics.
   :bulb: **Sensor Calibration**:
@@ -66,11 +74,17 @@ Wet Value - Completely submerged in water.
   Run the code and keep an eye on the serial monitor. Record the values in both damp and dry environments.
   
  *Dry Value*
-  ![serial monitor dry value](https://github.com/irhesri/Smart-Irrigation-System/blob/main/Part1%3A%20Irrigation%20System/Code/SensorDryValue.png)
-
+ 
+  <p align="center">
+    <img name="serial monitor dry value" src="https://github.com/irhesri/Smart-Irrigation-System/blob/main/Part1%3A%20Irrigation%20System/Code/SensorDryValue.png">
+  </p>
+  
   *Wet Value*
-    ![serial monitor wet value](https://github.com/irhesri/Smart-Irrigation-System/blob/main/Part1%3A%20Irrigation%20System/Code/SensorWetValue.png)
-
+  
+   <p align="center">
+    <img name="serial monitor wet value" src="https://github.com/irhesri/Smart-Irrigation-System/blob/main/Part1%3A%20Irrigation%20System/Code/SensorWetValue.png">
+   </p>
+   
   1- Read sensors values:
   ```
   moistureValue = analogRead(moistureSensorPin);
@@ -89,14 +103,20 @@ Wet Value - Completely submerged in water.
 >>>>>>>>>> ---
   #### *1. Introduction:*
   The 5V relay is an electromechanical switch that enables the Arduino Uno to regulate devices, such as water pumps, based on low-power signals. In the smart irrigation system, the relay serves as the interface between the Arduino Uno and the irrigation mechanism, enabling the automated activation and deactivation of the pump.
-
-  ![relay 5v](https://github.com/irhesri/Smart-Irrigation-System/blob/main/Part1%3A%20Irrigation%20System/Equipments/Relay%205v.jpg)
+  
+   <p align="center">
+      <img name="relay 5v" src="https://github.com/irhesri/Smart-Irrigation-System/blob/main/Part1%3A%20Irrigation%20System/Equipments/Relay%205v.jpg">
+   </p>
 
   #### *2. Specifications:*
   - Required voltage for working: 5V
   - Type of interface: Digital
   #### *3. Mounting:*
-  ![relay mounting](https://github.com/irhesri/Smart-Irrigation-System/blob/main/Part1%3A%20Irrigation%20System/Equipments/Relay%205v.png)
+  
+  <p align="center">
+    <img name="relay mounting" src="https://github.com/irhesri/Smart-Irrigation-System/blob/main/Part1%3A%20Irrigation%20System/Equipments/Relay%205v.png">
+  </p>
+  
   #### *4. Code Functions:*
   - Turn on the relay :
   ```
@@ -112,19 +132,29 @@ Wet Value - Completely submerged in water.
 >>>>>>>>>> ---
   #### *1. Introduction:*
   A soil moisture sensor is capable of measuring the moisture content in the   surrounding soil. It proves to be a valuable tool for keeping track of your garden or plant's water levels, making it an essential component of a smart garden.
-![pump](https://github.com/irhesri/Smart-Irrigation-System/blob/main/Part1%3A%20Irrigation%20System/Equipments/Pump%20120L-h.jpg)
+  
+  <p align="center">
+    <img name="pump" src="https://github.com/irhesri/Smart-Irrigation-System/blob/main/Part1%3A%20Irrigation%20System/Equipments/Pump%20120L-h.jpg">
+  </p>
+  
   #### *2. Specifications:*
   - Required voltage for working: 5V
   - Required current for working: 130-220mA
   - Flow rate:    80-120L/H
   #### *3. Mounting:*
-  ![pump mounting]()
+  
+  <p align="center">
+    <img name="pump mounting" src="">
+  </p>
+  
   #### *4. Code Functions:*
   > By operating the relay we have the ability to manage the pump. When the relay is deactivated the pump turns OFF. When it is activated the pump starts running.
 
   ## Mounting
-
-  ![irrigation system mounting](https://github.com/irhesri/Smart-Irrigation-System/blob/main/Part1%3A%20Irrigation%20System/Irrigation%20system.png)
+  
+  <p align="center">
+    <img name="irrigation system mounting" src="https://github.com/irhesri/Smart-Irrigation-System/blob/main/Part1%3A%20Irrigation%20System/Irrigation%20system.png">
+  </p>
 
 ># :memo: Note:
 > 
