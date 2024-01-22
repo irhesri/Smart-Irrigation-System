@@ -126,7 +126,7 @@ Wet Value - Completely submerged in water.
 
   ![irrigation system mounting](https://github.com/irhesri/Smart-Irrigation-System/blob/main/Part1%3A%20Irrigation%20System/Irrigation%20system.png)
 
->## :memo: Note:
+># :memo: Note:
 > 
 >The schems are made using [fritzing](https://fritzing.org/download/).
 > 
