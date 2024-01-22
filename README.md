@@ -25,7 +25,7 @@
 - [Notes](https://github.com/irhesri/Smart-Irrigation-System/tree/main#memo-note)
 
 # Part 1: Irrigation System
-
+In this part we are gonna assemble the components and develop a code to enable the arduino to collect soil moisture data in order to determine whether to turn on or, off pump. Upon detecting a low moisture level, the Arduino must intervene by activating the pump to supply water for the plant.
 ## Equipments
 
 ### I- Soil Moisture Sensor:
