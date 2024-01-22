@@ -4,11 +4,25 @@
 
 # Table of Contents
 
-- [Part 1: Irrigation System](https://github.com/irhesri/Smart-Irrigation-System/edit/main/README.md#part-1-irrigation-system)
-  - [Equipments](https://github.com/irhesri/Smart-Irrigation-System/edit/main/README.md#equipments)
-    - [Soil Moisture Sensor](https://github.com/irhesri/Smart-Irrigation-System/edit/main/README.md#i--soil-moisture-sensor)
-    - [Relay](https://github.com/irhesri/Smart-Irrigation-System/edit/main/README.md#ii--relay)
-    - [Pump](https://github.com/irhesri/Smart-Irrigation-System/edit/main/README.md#iii--pump)
+- [Part 1: Irrigation System](https://github.com/irhesri/Smart-Irrigation-System/tree/main#part-1-irrigation-system)
+  - [Equipments](https://github.com/irhesri/Smart-Irrigation-System/tree/main#equipments)
+    - [Soil Moisture Sensor](https://github.com/irhesri/Smart-Irrigation-System/tree/main#i--soil-moisture-sensor)
+      - [Introduction](https://github.com/irhesri/Smart-Irrigation-System/tree/main#1-introduction)
+      - [Specifications](https://github.com/irhesri/Smart-Irrigation-System/tree/main#2-specifications)
+      - [Mounting](https://github.com/irhesri/Smart-Irrigation-System/tree/main#3-mounting)
+      - [Code Functions](https://github.com/irhesri/Smart-Irrigation-System/tree/main#4-code-functions)
+    - [Relay](https://github.com/irhesri/Smart-Irrigation-System/tree/main#ii--relay)
+      - [Introduction](https://github.com/irhesri/Smart-Irrigation-System/tree/main#1-introduction-1)
+      - [Specifications]()
+      - [Mounting]()
+      - [Code Functions](https://github.com/irhesri/Smart-Irrigation-System/tree/main#4-code-functions-1)
+    - [Pump](https://github.com/irhesri/Smart-Irrigation-System/tree/main#iii--pump)
+      - [Introduction](https://github.com/irhesri/Smart-Irrigation-System/tree/main#1-introduction-2)
+      - [Specifications](https://github.com/irhesri/Smart-Irrigation-System/tree/main#2-specifications-1)
+      - [Mounting](https://github.com/irhesri/Smart-Irrigation-System/tree/main#3-mounting-1)
+      - [Code Functions](https://github.com/irhesri/Smart-Irrigation-System/tree/main#4-code-functions-2)
+  - [Mounting](https://github.com/irhesri/Smart-Irrigation-System/tree/main#mounting)
+  - [Notes](https://github.com/irhesri/Smart-Irrigation-System/tree/main#memo-note)
 
 # Part 1: Irrigation System
 
@@ -78,10 +92,10 @@ Wet Value - Completely submerged in water.
 
   ![relay 5v](https://github.com/irhesri/Smart-Irrigation-System/blob/main/Part1%3A%20Irrigation%20System/Equipments/Relay%205v.jpg)
 
-    #### *2. Specifications:*
-    - Required voltage for working: 5V
-    - Type of interface: Digital
-    #### *3. Mounting:*
+  #### *2. Specifications:*
+  - Required voltage for working: 5V
+  - Type of interface: Digital
+  #### *3. Mounting:*
   ![relay mounting](https://github.com/irhesri/Smart-Irrigation-System/blob/main/Part1%3A%20Irrigation%20System/Equipments/Relay%205v.png)
   #### *4. Code Functions:*
   - Turn on the relay :
