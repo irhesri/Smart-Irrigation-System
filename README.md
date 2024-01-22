@@ -1,1 +1,119 @@
 # Smart Irrigation System
+
+# Project Overview:
+
+# Table of Contents
+
+- [Part 1: Irrigation System](https://github.com/irhesri/Smart-Irrigation-System/edit/main/README.md#part-1-irrigation-system)
+  - [Equipments](https://github.com/irhesri/Smart-Irrigation-System/edit/main/README.md#equipments)
+    - [Soil Moisture Sensor](https://github.com/irhesri/Smart-Irrigation-System/edit/main/README.md#i--soil-moisture-sensor)
+    - [Relay](https://github.com/irhesri/Smart-Irrigation-System/edit/main/README.md#ii--relay)
+    - [Pump](https://github.com/irhesri/Smart-Irrigation-System/edit/main/README.md#iii--pump)
+
+# Part 1: Irrigation System
+
+## Equipments
+
+### I- Soil Moisture Sensor:
+>>>>>>>>>> ---
+   #### *1. Introduction:*
+  A soil moisture sensor is capable of measuring the moisture content in the   surrounding soil. It proves to be a valuable tool for keeping track of your garden or plant's water levels, making it an essential component of a smart garden.
+![soil moisture sensor](https://github.com/irhesri/Smart-Irrigation-System/blob/main/Part1%3A%20Irrigation%20System/Equipments/Soil%20Moisture%20Sensor.jpg)
+This sensor employs two probes to transmit current through the soil and subsequently gauge the resistance to determine the moisture level. Increased water content enhances soil conductivity, resulting in easier electricity flow (lower resistance), whereas dry soil exhibits poor conductivity, leading to higher resistance.
+  #### *2. Specifications:*
+  - Required voltage for working: 5V
+  - Required current for working: <20mA
+  - Required working temperature: 10°C~30°C
+  - Type of interface: Analog
+  - Depth of detection: 37mm
+  #### *3. Mounting:*
+  ![soil moisture sensor mounting](https://github.com/irhesri/Smart-Irrigation-System/blob/main/Part1%3A%20Irrigation%20System/Equipments/Soil%20Moisture%20Sensor.png)
+  #### *4. Code Functions:*
+In order to use our moisture sensors it is necessary for us to perform a calibration process. It appears that each of these devices possesses its qualities and even sensors obtained from the same batch may have varying characteristics.
+  :bulb: **Sensor Calibration**:
+Calibration is a straightforward procedure involving determining the sensor's analog output under two conditions:
+Dry Value - Exposed to air with minimal humidity.
+Wet Value - Completely submerged in water.
+- The calibration code is quite simple. In our code, we merely read the sensor value and print it to the serial monitor. After a brief pause, we repeat the entire process:
+  
+  ```
+  #define sensor_pin A0
+
+  void  setup() {
+  Serial.begin(9600);
+  }
+
+  void  loop() {
+    int  sensor_analog = analogRead(sensor_pin);
+    Serial.println(sensor_analog);
+    delay(1000);
+  }
+  ```
+  Run the code and keep an eye on the serial monitor. Record the values in both damp and dry environments.
+  
+ *Dry Value*
+  ![serial monitor dry value](https://github.com/irhesri/Smart-Irrigation-System/blob/main/Part1%3A%20Irrigation%20System/Code/SensorDryValue.png)
+
+  *Wet Value*
+    ![serial monitor wet value](https://github.com/irhesri/Smart-Irrigation-System/blob/main/Part1%3A%20Irrigation%20System/Code/SensorWetValue.png)
+
+  1- Read sensors values:
+  ```
+  moistureValue = analogRead(moistureSensorPin);
+  ```
+
+  2- Determine soil moisture percentage:
+  ```
+  moisturePercentage = map(moistureValue, DryValue, WetValue, 0, 100);
+  ```
+  
+  3- Make sure that the value is between 0 and 100:
+  ```
+  moisturePercentage = constrain(moisturePercentage, 0, 100);
+  ```
+  ### II- Relay:
+>>>>>>>>>> ---
+  #### *1. Introduction:*
+  The 5V relay is an electromechanical switch that enables the Arduino Uno to regulate devices, such as water pumps, based on low-power signals. In the smart irrigation system, the relay serves as the interface between the Arduino Uno and the irrigation mechanism, enabling the automated activation and deactivation of the pump.
+
+  ![relay 5v](https://github.com/irhesri/Smart-Irrigation-System/blob/main/Part1%3A%20Irrigation%20System/Equipments/Relay%205v.jpg)
+
+    #### *2. Specifications:*
+    - Required voltage for working: 5V
+    - Type of interface: Digital
+    #### *3. Mounting:*
+  ![relay mounting](https://github.com/irhesri/Smart-Irrigation-System/blob/main/Part1%3A%20Irrigation%20System/Equipments/Relay%205v.png)
+  #### *4. Code Functions:*
+  - Turn on the relay :
+  ```
+  digitalWrite(relayPin, LOW);
+  ```
+  
+  - Turn off the relay:
+  ```
+  digitalWrite(relayPin, HIGH);
+  ```
+
+  ### III- Pump:
+>>>>>>>>>> ---
+  #### *1. Introduction:*
+  A soil moisture sensor is capable of measuring the moisture content in the   surrounding soil. It proves to be a valuable tool for keeping track of your garden or plant's water levels, making it an essential component of a smart garden.
+![pump](https://github.com/irhesri/Smart-Irrigation-System/blob/main/Part1%3A%20Irrigation%20System/Equipments/Pump%20120L-h.jpg)
+  #### *2. Specifications:*
+  - Required voltage for working: 5V
+  - Required current for working: 130-220mA
+  - Flow rate:    80-120L/H
+  #### *3. Mounting:*
+  ![pump mounting]()
+  #### *4. Code Functions:*
+  > By operating the relay we have the ability to manage the pump. When the relay is deactivated the pump turns OFF. When it is activated the pump starts running.
+
+  ## Mounting
+
+  ![irrigation system mounting](https://github.com/irhesri/Smart-Irrigation-System/blob/main/Part1%3A%20Irrigation%20System/Irrigation%20system.png)
+
+>## :memo: Note:
+> 
+>The schems are made using [fritzing](https://fritzing.org/download/).
+> 
+> The material and the images are from [micro-planet](https://www.micro-planet.ma/produit/module-wifi-esp8266-esp-01/) and [marocproduit](https://marocproduits.com/)
