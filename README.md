@@ -22,7 +22,7 @@
       - [Mounting](https://github.com/irhesri/Smart-Irrigation-System/tree/main#3-mounting-1)
       - [Code Functions](https://github.com/irhesri/Smart-Irrigation-System/tree/main#4-code-functions-2)
   - [Mounting](https://github.com/irhesri/Smart-Irrigation-System/tree/main#mounting)
-  - [Notes](https://github.com/irhesri/Smart-Irrigation-System/tree/main#memo-note)
+- [Notes](https://github.com/irhesri/Smart-Irrigation-System/tree/main#memo-note)
 
 # Part 1: Irrigation System
 
