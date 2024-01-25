@@ -34,7 +34,7 @@ In this part we are gonna assemble the components and develop a code to enable t
   A soil moisture sensor is capable of measuring the moisture content in the   surrounding soil. It proves to be a valuable tool for keeping track of your garden or plant's water levels, making it an essential component of a smart garden.
   
 <p align="center">
-  <img name="soil moisture sensor" src="https://github.com/irhesri/Smart-Irrigation-System/blob/main/Part1%3A%20Irrigation%20System/Equipments/Soil%20Moisture%20Sensor.jpg">
+  <img alt="soil moisture sensor" src="https://github.com/irhesri/Smart-Irrigation-System/blob/main/Part1%3A%20Irrigation%20System/Equipments/Soil%20Moisture%20Sensor.jpg">
 </p>
 
 This sensor employs two probes to transmit current through the soil and subsequently gauge the resistance to determine the moisture level. Increased water content enhances soil conductivity, resulting in easier electricity flow (lower resistance), whereas dry soil exhibits poor conductivity, leading to higher resistance.
@@ -47,7 +47,7 @@ This sensor employs two probes to transmit current through the soil and subseque
   #### *3. Mounting:* 
   
 <p align="center">
-  <img name="soil moisture sensor mounting" src="https://github.com/irhesri/Smart-Irrigation-System/blob/main/Part1%3A%20Irrigation%20System/Equipments/Soil%20Moisture%20Sensor.png">
+  <img alt="soil moisture sensor mounting" src="https://github.com/irhesri/Smart-Irrigation-System/blob/main/Part1%3A%20Irrigation%20System/Equipments/Soil%20Moisture%20Sensor.png">
 </p>
 
   #### *4. Code Functions:*
@@ -76,13 +76,13 @@ Wet Value - Completely submerged in water.
  *Dry Value*
  
   <p align="center">
-    <img name="serial monitor dry value" src="https://github.com/irhesri/Smart-Irrigation-System/blob/main/Part1%3A%20Irrigation%20System/Code/SensorDryValue.png">
+    <img alt="serial monitor dry value" src="https://github.com/irhesri/Smart-Irrigation-System/blob/main/Part1%3A%20Irrigation%20System/Code/SensorDryValue.png">
   </p>
   
   *Wet Value*
   
    <p align="center">
-    <img name="serial monitor wet value" src="https://github.com/irhesri/Smart-Irrigation-System/blob/main/Part1%3A%20Irrigation%20System/Code/SensorWetValue.png">
+    <img alt="serial monitor wet value" src="https://github.com/irhesri/Smart-Irrigation-System/blob/main/Part1%3A%20Irrigation%20System/Code/SensorWetValue.png">
    </p>
    
   1- Read sensors values:
@@ -105,7 +105,7 @@ Wet Value - Completely submerged in water.
   The 5V relay is an electromechanical switch that enables the Arduino Uno to regulate devices, such as water pumps, based on low-power signals. In the smart irrigation system, the relay serves as the interface between the Arduino Uno and the irrigation mechanism, enabling the automated activation and deactivation of the pump.
   
    <p align="center">
-      <img name="relay 5v" src="https://github.com/irhesri/Smart-Irrigation-System/blob/main/Part1%3A%20Irrigation%20System/Equipments/Relay%205v.jpg">
+      <img alt="relay 5v" src="https://github.com/irhesri/Smart-Irrigation-System/blob/main/Part1%3A%20Irrigation%20System/Equipments/Relay%205v.jpg">
    </p>
 
   #### *2. Specifications:*
@@ -114,7 +114,7 @@ Wet Value - Completely submerged in water.
   #### *3. Mounting:*
   
   <p align="center">
-    <img name="relay mounting" src="https://github.com/irhesri/Smart-Irrigation-System/blob/main/Part1%3A%20Irrigation%20System/Equipments/Relay%205v.png">
+    <img alt="relay mounting" src="https://github.com/irhesri/Smart-Irrigation-System/blob/main/Part1%3A%20Irrigation%20System/Equipments/Relay%205v.png">
   </p>
   
   #### *4. Code Functions:*
@@ -134,7 +134,7 @@ Wet Value - Completely submerged in water.
   A soil moisture sensor is capable of measuring the moisture content in the   surrounding soil. It proves to be a valuable tool for keeping track of your garden or plant's water levels, making it an essential component of a smart garden.
   
   <p align="center">
-    <img name="pump" src="https://github.com/irhesri/Smart-Irrigation-System/blob/main/Part1%3A%20Irrigation%20System/Equipments/Pump%20120L-h.jpg">
+    <img alt="pump" src="https://github.com/irhesri/Smart-Irrigation-System/blob/main/Part1%3A%20Irrigation%20System/Equipments/Pump%20120L-h.jpg">
   </p>
   
   #### *2. Specifications:*
@@ -144,7 +144,7 @@ Wet Value - Completely submerged in water.
   #### *3. Mounting:*
   
   <p align="center">
-    <img name="pump mounting" src="">
+    <img alt="pump mounting" src="">
   </p>
   
   #### *4. Code Functions:*
@@ -153,9 +153,70 @@ Wet Value - Completely submerged in water.
   ## Mounting
   
   <p align="center">
-    <img name="irrigation system mounting" src="https://github.com/irhesri/Smart-Irrigation-System/blob/main/Part1%3A%20Irrigation%20System/Irrigation%20system.png">
+    <img alt="irrigation system mounting" src="https://github.com/irhesri/Smart-Irrigation-System/blob/main/Part1%3A%20Irrigation%20System/Irrigation%20system.png">
   </p>
 
+# Part2: Humidity and Temperature Display
+In this part the arduino system is equipped with a sensor that measures the temperature and humidity of the air. These data are then displayed on an LCD screen integrated into the device. 
+
+## Equipments
+
+### I- DHT11:
+>>>>>>>>>> ---
+   #### *1. Introduction:*
+The DHT11 is a temperature and humidity sensor widely used in electronic projects. It can measure both the ambient temperature and the relative humidity of the environment in which it is placed.
+ - Temperature Measurement: The DHT11 sensor can provide an accuracy of ±2°C in the temperature range of 0°C to 50°C.
+
+ - Humidity Measurement: The DHT11 sensor can provide an accuracy of ±5% in the humidity range of 20% to 80%.
+
+  <p align="center">
+    <img alt="DHT11" src="https://github.com/irhesri/Smart-Irrigation-System/blob/main/Part2%3A%20Humidity%20and%20Temperature%20Display/Equipments/DHT11%20sensor.jpg">
+  </p>
+  
+   #### *2. Specifications:*
+   - Required voltage for working: 3.3V to 5V
+   #### *3. Mounting:*
+
+  <p align="center">
+    <img alt="DHT11 mounting" src="https://github.com/irhesri/Smart-Irrigation-System/blob/main/Part2%3A%20Humidity%20and%20Temperature%20Display/Equipments/DHT11%20Sensor.png">
+  </p>
+   
+   #### *4. Code Functions:*
+   
+### II- LCD 16x2 I2C:
+>>>>>>>>>> ---
+   #### *1. Introduction:*
+   This module combines a 16x02 LCD screen with an I2C interface module. The I2C module helps reduce the number of wires needed to connect the display to the Arduino.
+   
+  <p align="center">
+    <img alt="LCD 16x2" width=49% src="">
+    <img alt="I2C adapter" width=49% src="https://github.com/irhesri/Smart-Irrigation-System/blob/main/Part2%3A%20Humidity%20and%20Temperature%20Display/Equipments/I2C%20Adapter%20for%20LCD.jpg">
+  </p>
+
+  ~ After soldering:
+  <p align="center">
+    <img alt="LCD 16x2 I2C front" width=49% src="https://github.com/irhesri/Smart-Irrigation-System/blob/main/Part2%3A%20Humidity%20and%20Temperature%20Display/Equipments/LCD%2016x02.jpg">
+    <img alt="LCD 16x2 I2C back" width=49% src="https://github.com/irhesri/Smart-Irrigation-System/blob/main/Part2%3A%20Humidity%20and%20Temperature%20Display/Equipments/LCD%2016x02%20I2C.jpg">
+  </p>
+  
+   #### *2. Specifications:*
+   - Required voltage for working: 5V
+   - Adresse I2C : 0x27
+   
+   #### *3. Mounting:*
+
+  <p align="center">
+    <img alt="LCD I2C mounting" src="https://github.com/irhesri/Smart-Irrigation-System/blob/main/Part2%3A%20Humidity%20and%20Temperature%20Display/Equipments/LCD%2016x2%20I2C.png">
+  </p>
+   
+   #### *4. Code Functions:*
+
+## Mounting
+  
+  <p align="center">
+    <img alt="DHT11 & LCD mounting" src="https://github.com/irhesri/Smart-Irrigation-System/blob/main/Part2%3A%20Humidity%20and%20Temperature%20Display/Temp%20%26%20humidity.png">
+  </p>
+  
 ># :memo: Note:
 > 
 >The schems are made using [fritzing](https://fritzing.org/download/).
