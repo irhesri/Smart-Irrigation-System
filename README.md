@@ -99,7 +99,7 @@ Dry Value - Exposed to air with minimal humidity.
 Wet Value - Completely submerged in water.
 - The calibration code is quite simple. In our code, we merely read the sensor value and print it to the serial monitor. After a brief pause, we repeat the entire process:
   
-  ```
+  ``` ino
   #define sensor_pin A0
 
   void  setup() {
@@ -127,17 +127,17 @@ Wet Value - Completely submerged in water.
    </p>
    
   1- Read sensors values:
-  ```
+  ``` ino
   moistureValue = analogRead(moistureSensorPin);
   ```
 
   2- Determine soil moisture percentage:
-  ```
+  ``` ino
   moisturePercentage = map(moistureValue, DryValue, WetValue, 0, 100);
   ```
   
   3- Make sure that the value is between 0 and 100:
-  ```
+  ``` ino
   moisturePercentage = constrain(moisturePercentage, 0, 100);
   ```
   ### II- Relay:
@@ -160,12 +160,12 @@ Wet Value - Completely submerged in water.
   
   #### *4. Code Functions:*
   - Turn on the relay :
-  ```
+  ``` ino
   digitalWrite(relayPin, LOW);
   ```
   
   - Turn off the relay:
-  ```
+  ``` ino
   digitalWrite(relayPin, HIGH);
   ```
 
@@ -223,6 +223,22 @@ The DHT11 is a temperature and humidity sensor widely used in electronic project
   </p>
    
    #### *4. Code Functions:*
+``` ino
+#include "DHT.h"
+```
+
+``` ino
+DHT dht(4, DHT11);
+```
+
+``` ino
+dht.begin();
+```
+
+``` ino
+humidity = dht.readHumidity();
+temperature = dht.readTemperature();
+```
    
 ### II- LCD 16x2 I2C:
 >>>>>>>>>> ---
@@ -251,7 +267,30 @@ The DHT11 is a temperature and humidity sensor widely used in electronic project
   </p>
    
    #### *4. Code Functions:*
+``` ino
+#include<LiquidCrystal_I2C.h>
+```
 
+``` ino
+LiquidCrystal_I2C lcd(0x27,16,2);
+```
+
+``` ino
+lcd.init();
+lcd.clear();
+```
+
+``` ino
+lcd.backlight();
+```
+
+``` ino
+lcd.setCursor(x, y);
+```
+
+``` ino
+lcd.print("Hello World!");
+```
 ## Mounting
   
   <p align="center">
