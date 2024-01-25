@@ -140,6 +140,7 @@ Wet Value - Completely submerged in water.
   ``` ino
   moisturePercentage = constrain(moisturePercentage, 0, 100);
   ```
+
   ### II- Relay:
 >>>>>>>>>> ---
   #### *1. Introduction:*
@@ -216,6 +217,7 @@ The DHT11 is a temperature and humidity sensor widely used in electronic project
   
    #### *2. Specifications:*
    - Required voltage for working: 3.3V to 5V
+
    #### *3. Mounting:*
 
   <p align="center">
@@ -223,18 +225,17 @@ The DHT11 is a temperature and humidity sensor widely used in electronic project
   </p>
    
    #### *4. Code Functions:*
+- Include the necessary library [DHT](https://www.arduino.cc/reference/en/libraries/dht-sensor-library):
 ``` ino
 #include "DHT.h"
 ```
-
+- Initialize the DHT sensor:
 ``` ino
 DHT dht(4, DHT11);
-```
 
-``` ino
 dht.begin();
 ```
-
+- Read the humidity and temperature:
 ``` ino
 humidity = dht.readHumidity();
 temperature = dht.readTemperature();
@@ -267,27 +268,25 @@ temperature = dht.readTemperature();
   </p>
    
    #### *4. Code Functions:*
+- Include the necessary library [LiquidCrystal_I2C](https://github.com/johnrickman/LiquidCrystal_I2C?tab=readme-ov-file):
 ``` ino
 #include<LiquidCrystal_I2C.h>
 ```
-
+- Set the LCD address to the LCD default address (0x27) for a 16 characters and 2 lines display (LCD 16x2):
 ``` ino
 LiquidCrystal_I2C lcd(0x27,16,2);
 ```
-
+- Initialise and clear the display:
 ``` ino
 lcd.init();
 lcd.clear();
-```
-
-``` ino
 lcd.backlight();
 ```
-
+- Set cursor on (X[column],Y[row]):
 ``` ino
-lcd.setCursor(x, y);
+lcd.setCursor(X, Y);
 ```
-
+- Print on the LCD:
 ``` ino
 lcd.print("Hello World!");
 ```
