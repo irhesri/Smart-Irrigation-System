@@ -22,6 +22,19 @@
       - [Mounting](https://github.com/irhesri/Smart-Irrigation-System/tree/main#3-mounting-1)
       - [Code Functions](https://github.com/irhesri/Smart-Irrigation-System/tree/main#4-code-functions-2)
   - [Mounting](https://github.com/irhesri/Smart-Irrigation-System/tree/main#mounting)
+- [Part2: Humidity and Temperature Display](https://github.com/irhesri/Smart-Irrigation-System/tree/main#part2-humidity-and-temperature-display)
+  - [Equipments](https://github.com/irhesri/Smart-Irrigation-System/tree/main#equipments-1)
+    - [DHT11](https://github.com/irhesri/Smart-Irrigation-System/tree/main#i--dht11)
+      - [Introduction](https://github.com/irhesri/Smart-Irrigation-System/tree/main#1-introduction-3)
+      - [Specifications](https://github.com/irhesri/Smart-Irrigation-System/tree/main#2-specifications-3)
+      - [Mounting](https://github.com/irhesri/Smart-Irrigation-System/tree/main#3-mounting-3)
+      - [Code Functions](https://github.com/irhesri/Smart-Irrigation-System/tree/main#4-code-functions-3)
+    - [LCD 16x2 I2C](https://github.com/irhesri/Smart-Irrigation-System/tree/main#ii--lcd-16x2-i2c)
+      - [Introduction](https://github.com/irhesri/Smart-Irrigation-System/tree/main#1-introduction-4)
+      - [Specifications](https://github.com/irhesri/Smart-Irrigation-System/tree/main#2-specifications-4)
+      - [Mounting](https://github.com/irhesri/Smart-Irrigation-System/tree/main#3-mounting-4)
+      - [Code Functions](https://github.com/irhesri/Smart-Irrigation-System/tree/main#4-code-functions-4)
+  - [Mounting](https://github.com/irhesri/Smart-Irrigation-System/tree/main#mounting-1)
 - [Notes](https://github.com/irhesri/Smart-Irrigation-System/tree/main#memo-note)
 
 # Part 1: Irrigation System
@@ -189,14 +202,14 @@ The DHT11 is a temperature and humidity sensor widely used in electronic project
    This module combines a 16x02 LCD screen with an I2C interface module. The I2C module helps reduce the number of wires needed to connect the display to the Arduino.
    
   <p align="center">
-    <img alt="LCD 16x2" width=49% src="">
+    <img alt="LCD 16x2" width=49% src="https://github.com/irhesri/Smart-Irrigation-System/blob/main/Part2%3A%20Humidity%20and%20Temperature%20Display/Equipments/LCD%2016x02.jpg">
     <img alt="I2C adapter" width=49% src="https://github.com/irhesri/Smart-Irrigation-System/blob/main/Part2%3A%20Humidity%20and%20Temperature%20Display/Equipments/I2C%20Adapter%20for%20LCD.jpg">
   </p>
 
   ~ After soldering:
   <p align="center">
-    <img alt="LCD 16x2 I2C front" width=49% src="https://github.com/irhesri/Smart-Irrigation-System/blob/main/Part2%3A%20Humidity%20and%20Temperature%20Display/Equipments/LCD%2016x02.jpg">
-    <img alt="LCD 16x2 I2C back" width=49% src="https://github.com/irhesri/Smart-Irrigation-System/blob/main/Part2%3A%20Humidity%20and%20Temperature%20Display/Equipments/LCD%2016x02%20I2C.jpg">
+    <img alt="LCD 16x2 I2C front" width=49% src="https://github.com/irhesri/Smart-Irrigation-System/blob/main/Part2%3A%20Humidity%20and%20Temperature%20Display/Equipments/LCD%2016x02%20I2C%20front.jpg">
+    <img alt="LCD 16x2 I2C back" width=49% src="https://github.com/irhesri/Smart-Irrigation-System/blob/main/Part2%3A%20Humidity%20and%20Temperature%20Display/Equipments/LCD%2016x02%20I2C%20Back.jpg">
   </p>
   
    #### *2. Specifications:*
