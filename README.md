@@ -6,34 +6,62 @@
 
 - [Part 1: Irrigation System](https://github.com/irhesri/Smart-Irrigation-System/tree/main#part-1-irrigation-system)
   - [Equipments](https://github.com/irhesri/Smart-Irrigation-System/tree/main#equipments)
-    - [Soil Moisture Sensor](https://github.com/irhesri/Smart-Irrigation-System/tree/main#i--soil-moisture-sensor)
+    
+    <details>
+      <summary> <a href="https://github.com/irhesri/Smart-Irrigation-System/tree/main#i--soil-moisture-sensor">Soil Moisture Sensor</a> </summary>
+      
       - [Introduction](https://github.com/irhesri/Smart-Irrigation-System/tree/main#1-introduction)
       - [Specifications](https://github.com/irhesri/Smart-Irrigation-System/tree/main#2-specifications)
       - [Mounting](https://github.com/irhesri/Smart-Irrigation-System/tree/main#3-mounting)
       - [Code Functions](https://github.com/irhesri/Smart-Irrigation-System/tree/main#4-code-functions)
-    - [Relay](https://github.com/irhesri/Smart-Irrigation-System/tree/main#ii--relay)
+      
+    </details>
+    
+    <details>
+      <summary> <a href="https://github.com/irhesri/Smart-Irrigation-System/tree/main#ii--relay">Relay</a> </summary>
+      
       - [Introduction](https://github.com/irhesri/Smart-Irrigation-System/tree/main#1-introduction-1)
       - [Specifications](https://github.com/irhesri/Smart-Irrigation-System/tree/main#2-specifications-1)
       - [Mounting](https://github.com/irhesri/Smart-Irrigation-System/tree/main#3-mounting-1)
       - [Code Functions](https://github.com/irhesri/Smart-Irrigation-System/tree/main#4-code-functions-1)
-    - [Pump](https://github.com/irhesri/Smart-Irrigation-System/tree/main#iii--pump)
+      
+    </details>
+
+    <details>
+      <summary> <a href="https://github.com/irhesri/Smart-Irrigation-System/tree/main#iii--pump">Pump</a> </summary>
+      
       - [Introduction](https://github.com/irhesri/Smart-Irrigation-System/tree/main#1-introduction-2)
       - [Specifications](https://github.com/irhesri/Smart-Irrigation-System/tree/main#2-specifications-1)
       - [Mounting](https://github.com/irhesri/Smart-Irrigation-System/tree/main#3-mounting-1)
       - [Code Functions](https://github.com/irhesri/Smart-Irrigation-System/tree/main#4-code-functions-2)
+      
+    </details>
+    
   - [Mounting](https://github.com/irhesri/Smart-Irrigation-System/tree/main#mounting)
+
 - [Part2: Humidity and Temperature Display](https://github.com/irhesri/Smart-Irrigation-System/tree/main#part2-humidity-and-temperature-display)
   - [Equipments](https://github.com/irhesri/Smart-Irrigation-System/tree/main#equipments-1)
-    - [DHT11](https://github.com/irhesri/Smart-Irrigation-System/tree/main#i--dht11)
+
+    <details>
+      <summary> <a href="https://github.com/irhesri/Smart-Irrigation-System/tree/main#i--dht11">DHT11</a> </summary>
+      
       - [Introduction](https://github.com/irhesri/Smart-Irrigation-System/tree/main#1-introduction-3)
       - [Specifications](https://github.com/irhesri/Smart-Irrigation-System/tree/main#2-specifications-3)
       - [Mounting](https://github.com/irhesri/Smart-Irrigation-System/tree/main#3-mounting-3)
       - [Code Functions](https://github.com/irhesri/Smart-Irrigation-System/tree/main#4-code-functions-3)
-    - [LCD 16x2 I2C](https://github.com/irhesri/Smart-Irrigation-System/tree/main#ii--lcd-16x2-i2c)
+      
+    </details>
+    
+    <details>
+      <summary> <a href="https://github.com/irhesri/Smart-Irrigation-System/tree/main#ii--lcd-16x2-i2c">LCD 16x2 I2C</a> </summary>
+      
       - [Introduction](https://github.com/irhesri/Smart-Irrigation-System/tree/main#1-introduction-4)
       - [Specifications](https://github.com/irhesri/Smart-Irrigation-System/tree/main#2-specifications-4)
       - [Mounting](https://github.com/irhesri/Smart-Irrigation-System/tree/main#3-mounting-4)
       - [Code Functions](https://github.com/irhesri/Smart-Irrigation-System/tree/main#4-code-functions-4)
+      
+    </details>
+
   - [Mounting](https://github.com/irhesri/Smart-Irrigation-System/tree/main#mounting-1)
 - [Notes](https://github.com/irhesri/Smart-Irrigation-System/tree/main#memo-note)
 
