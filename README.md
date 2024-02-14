@@ -323,7 +323,7 @@ lcd.print("Hello World!");
   </p>
 
 # Part 3: Monitoring the water level in the tank
-This part aims to monitor the water level in a reservoir by measuring the distance between the sensor and the reservoir bottom. Based on this water level, I programmed a visual indicator using an RGB LED, which changes color to reflect the water level variation. When the level is low, the LED displays a red hue, then transitions to orange, yellow, yellow-green, and finally green when the reservoir is full. This approach provides a clear and intuitive visualization of the water level, making reservoir supervision easier without requiring constant physical inspection. 
+This part aims to monitor the water level in a reservoir by measuring the distance between the sensor and the reservoir bottom. Based on this water level, I programmed a visual indicator using an RGB LED, which changes color to reflect the water level variation. When the level is low, the LED displays a red hue, then transitions to orange, yellow, greenish, and finally green when the reservoir is full. This approach provides a clear and intuitive visualization of the water level, making reservoir supervision easier without requiring constant physical inspection. 
 
 ## Equipments
 
