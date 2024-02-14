@@ -44,8 +44,8 @@ void loop() {
   if (distance >= maxDistance)
   {
     // LED Red
-    digitalWrite(redPin, HIGH);
-    digitalWrite(greenPin, LOW);
+    analogWrite(redPin, HIGH);
+    analogWrite(greenPin, LOW);
   }
   else if (distance >= maxDistance_75)
   {
