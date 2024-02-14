@@ -44,32 +44,32 @@ void loop() {
   if (distance >= maxDistance)
   {
     // LED Red
-    analogWrite(redPin, HIGH);
-    analogWrite(greenPin, LOW);
+    digitalWrite(redPin, HIGH);
+    digitalWrite(greenPin, LOW);
   }
   else if (distance >= maxDistance_75)
   {
     // LED Orange
-    analogWrite(redPin, 255);
-    analogWrite(greenPin, 10);    
+    digitalWrite(redPin, 255);
+    digitalWrite(greenPin, 10);    
   }
   else if (distance >= maxDistance_50)
   {
     // LED Yellow
-    analogWrite(redPin, 255);
-    analogWrite(greenPin, 255);    
+    digitalWrite(redPin, 255);
+    digitalWrite(greenPin, 255);    
   }
   else if (distance >= maxDistance_25)
   {
     // LED Greenish
-    analogWrite(redPin, 10);
-    analogWrite(greenPin, 255);    
+    digitalWrite(redPin, 10);
+    digitalWrite(greenPin, 255);    
   }
   else
   {
     // LED Green
-    analogWrite(redPin, 0);
-    analogWrite(greenPin, 255);    
+    digitalWrite(redPin, 0);
+    digitalWrite(greenPin, 255);    
   }
 
   Serial.print("Distance: ");
