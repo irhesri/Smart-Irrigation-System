@@ -63,30 +63,30 @@
     </details>
 
   - [Mounting](https://github.com/irhesri/Smart-Irrigation-System/tree/main#mounting-1)
-- [Part 3: Monitoring the water level in the tank]()
-  - [Equipments]()
+- [Part 3: Monitoring the water level in the tank](https://github.com/irhesri/Smart-Irrigation-System/tree/main#part-3-monitoring-the-water-level-in-the-tank)
+  - [Equipments](https://github.com/irhesri/Smart-Irrigation-System/tree/main#equipments-2)
 
     <details>
-      <summary> <a href="">HC-SR04</a> </summary>
+      <summary> <a href="https://github.com/irhesri/Smart-Irrigation-System/tree/main?tab=readme-ov-file#i--hc-sr04">HC-SR04</a> </summary>
       
-      - [Introduction]()
-      - [Specifications]()
-      - [Mounting]()
-      - [Code Functions]()
+      - [Introduction](https://github.com/irhesri/Smart-Irrigation-System/tree/main?tab=readme-ov-file#1-introduction-5)
+      - [Specifications](https://github.com/irhesri/Smart-Irrigation-System/tree/main?tab=readme-ov-file#2-specifications-5)
+      - [Mounting](https://github.com/irhesri/Smart-Irrigation-System/tree/main?tab=readme-ov-file#3-mounting-5)
+      - [Code Functions](https://github.com/irhesri/Smart-Irrigation-System/tree/main?tab=readme-ov-file#4-code-functions-5)
       
     </details>
     
     <details>
-      <summary> <a href="">LED RGB</a> </summary>
+      <summary> <a href="https://github.com/irhesri/Smart-Irrigation-System/tree/main?tab=readme-ov-file#ii--led-rgb">LED RGB</a> </summary>
       
-      - [Introduction]()
-      - [Specifications]()
-      - [Mounting]()
-      - [Code Functions]()
+      - [Introduction](https://github.com/irhesri/Smart-Irrigation-System/tree/main?tab=readme-ov-file#1-introduction-6)
+      - [Specifications](https://github.com/irhesri/Smart-Irrigation-System/tree/main?tab=readme-ov-file#2-specifications-6)
+      - [Mounting](https://github.com/irhesri/Smart-Irrigation-System/tree/main?tab=readme-ov-file#3-mounting-6)
+      - [Code Functions](https://github.com/irhesri/Smart-Irrigation-System/tree/main?tab=readme-ov-file#4-code-functions-6)
       
     </details>
 
-  - [Mounting]()
+  - [Mounting](https://github.com/irhesri/Smart-Irrigation-System/tree/main?tab=readme-ov-file#mounting-2)
   
 - [Notes](https://github.com/irhesri/Smart-Irrigation-System/tree/main#memo-note)
 
