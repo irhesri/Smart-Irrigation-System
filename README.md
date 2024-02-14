@@ -39,7 +39,7 @@
     
   - [Mounting](https://github.com/irhesri/Smart-Irrigation-System/tree/main#mounting)
 
-- [Part2: Humidity and Temperature Display](https://github.com/irhesri/Smart-Irrigation-System/tree/main#part2-humidity-and-temperature-display)
+- [Part 2: Humidity and Temperature Display](https://github.com/irhesri/Smart-Irrigation-System/tree/main#part2-humidity-and-temperature-display)
   - [Equipments](https://github.com/irhesri/Smart-Irrigation-System/tree/main#equipments-1)
 
     <details>
@@ -63,6 +63,31 @@
     </details>
 
   - [Mounting](https://github.com/irhesri/Smart-Irrigation-System/tree/main#mounting-1)
+- [Part 3: Monitoring the water level in the tank]()
+  - [Equipments]()
+
+    <details>
+      <summary> <a href="">HC-SR04</a> </summary>
+      
+      - [Introduction]()
+      - [Specifications]()
+      - [Mounting]()
+      - [Code Functions]()
+      
+    </details>
+    
+    <details>
+      <summary> <a href="">LED RGB</a> </summary>
+      
+      - [Introduction]()
+      - [Specifications]()
+      - [Mounting]()
+      - [Code Functions]()
+      
+    </details>
+
+  - [Mounting]()
+  
 - [Notes](https://github.com/irhesri/Smart-Irrigation-System/tree/main#memo-note)
 
 # Part 1: Irrigation System
@@ -286,16 +311,136 @@ lcd.backlight();
 ``` ino
 lcd.setCursor(X, Y);
 ```
-- Print on the LCD:
+- Print on the LCD: 
 ``` ino
 lcd.print("Hello World!");
 ```
+
 ## Mounting
   
   <p align="center">
     <img alt="DHT11 & LCD mounting" src="https://github.com/irhesri/Smart-Irrigation-System/blob/main/Part2%3A%20Humidity%20and%20Temperature%20Display/Temp%20%26%20humidity.png">
   </p>
+
+# Part 3: Monitoring the water level in the tank
+This part aims to monitor the water level in a reservoir by measuring the distance between the sensor and the reservoir bottom. Based on this water level, I programmed a visual indicator using an RGB LED, which changes color to reflect the water level variation. When the level is low, the LED displays a red hue, then transitions to orange, yellow, yellow-green, and finally green when the reservoir is full. This approach provides a clear and intuitive visualization of the water level, making reservoir supervision easier without requiring constant physical inspection. 
+
+## Equipments
+
+### I- HC-SR04:
+>>>>>>>>>> ---
+   #### *1. Introduction:*
   
+<p align="center">
+  <img alt="HC-SR04" src="https://github.com/irhesri/Smart-Irrigation-System/blob/main/Part3%3A%20Monitoring%20the%20water%20level%20in%20the%20tank/Equipements/HC-SR04.jpg">
+</p>
+
+This sensor is used to calculate the distance to an object.
+- Calculating the distance using HC-SR04
+We determine the time required for the sensor to reach the object and return, allowing us to calculate the distance using the following formula:
+
+$$
+Distance = Time × SpeedOfSound
+$$
+
+We know that `SpeedOfSound = 340m/s = 0.034cm/µs`
+
+So the formula becomes:
+
+$$
+Distance = Time × 0.034
+$$
+
+>💡Note:
+>
+>We measure the pulse duration of the wave emitted by the HC-SR04, which corresponds to twice the time it takes for the sensor to reach the object and return. So in order to get the real distance between the sensor an the object you need to devide by 2.
+>
+>$$
+>{Distance = (Time × 0.034) \over 2}
+>$$
+
+  #### *2. Specifications:*
+  - Required voltage for working: 5V
+  - Required current for working: 15mA
+  - Frequency: 40kHz
+  - The range: 2cm to 4m
+  - Ranging Accuracy: 3mm
+
+  #### *3. Mounting:* 
+  
+<p align="center">
+  <img alt="HC-SR04 mounting" src="https://github.com/irhesri/Smart-Irrigation-System/blob/main/Part3%3A%20Monitoring%20the%20water%20level%20in%20the%20tank/Equipements/HC-SR04.png">
+</p>
+
+  #### *4. Code Functions:*
+- The length of the pulse (in microseconds) or 0 if no pulse started:
+```ino
+pulseIn(echoPin, HIGH)
+```
+
+### II- LED RGB:
+>>>>>>>>>> ---
+   #### *1. Introduction:*
+  
+ <p align="center">
+    <img alt="LED RGB" width=49% src="https://github.com/irhesri/Smart-Irrigation-System/blob/main/Part3%3A%20Monitoring%20the%20water%20level%20in%20the%20tank/Equipements/LED%20RGB.jpg">
+    <img alt="Resistance" width=49% src="https://github.com/irhesri/Smart-Irrigation-System/blob/main/Part3%3A%20Monitoring%20the%20water%20level%20in%20the%20tank/Equipements/Resistance.jpg">
+  </p>
+
+In order to mount an LED, resistors are needed to limit the amount of current flowing through the LED and prevent it from burning out.
+
+- We can use Ohm's Law to calculate the resistance (R) needed:
+
+$$
+  R = {V_{source} - V_{LED} \over I_{LED}}
+$$
+
+> V<sub>source</sub> is the supply voltage.
+> 
+> V<sub>LED</sub> is the forward voltage drop of the LED.
+> 
+> I<sub>LED</sub> is the desired current through the LED.
+
+$$\eqalign {
+R_{R} &= {5V - 2V \over 0.02A} \\
+&= 150Ω
+}$$
+
+$$\eqalign {
+R_{G} &= R_{B} \\
+&= {5V - 3V \over 0.02A} \\
+&= 100Ω
+}$$
+
+> So we gonna use one resistor of 150Ω and 2 resistors of 100Ω.
+
+  #### *2. Specifications:*
+  - Required voltage for working: R:2-2.2V | G:3-3.2V | B:3-3.2V
+  - Max current: 20mA
+
+  #### *3. Mounting:* 
+  
+<p align="center">
+  <img alt="LED RGB mounting" src="https://github.com/irhesri/Smart-Irrigation-System/blob/main/Part3%3A%20Monitoring%20the%20water%20level%20in%20the%20tank/Equipements/RGB-LED.png">
+</p>
+
+  #### *4. Code Functions:*
+-Write an analog value to a pin (turn it on or off). 
+```ino
+analogWrite(ColorPin, x);
+```
+x between 0 - 255.
+
+## Mounting
+  
+  <p align="center">
+    <img alt="HC-SR04 & RGB mounting" src="https://github.com/irhesri/Smart-Irrigation-System/blob/main/Part3%3A%20Monitoring%20the%20water%20level%20in%20the%20tank/Water%20Level.png">
+  </p>
+
+>⚠️ Attention:
+>
+>Prior to initiating the system, the HC-SR04 should be positioned atop the tank, and the tank must be empty.
+
 ># :memo: Note:
 > 
 >The schems are made using [fritzing](https://fritzing.org/download/).
