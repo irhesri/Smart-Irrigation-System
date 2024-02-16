@@ -88,22 +88,27 @@
 
   - [Mounting](https://github.com/irhesri/Smart-Irrigation-System/tree/main?tab=readme-ov-file#mounting-2)
 
-- [Part 4:]()
-  - [Equipments]()
+- [Part 4: Integrating IoT with Project Components](https://github.com/irhesri/Smart-Irrigation-System/tree/main?tab=readme-ov-file#part4-integrating-iot-with-project-components)
+  - [Equipments](https://github.com/irhesri/Smart-Irrigation-System/tree/main?tab=readme-ov-file#equipments-3)
 
     <details>
-      <summary> <a href="">  </a> </summary>
+      <summary> <a href="https://github.com/irhesri/Smart-Irrigation-System/tree/main?tab=readme-ov-file#i--esp8266---esp01"> ESP8266 - ESP01 </a> </summary>
       
-      - [Introduction]()
-      - [Specifications]()
-      - [Mounting]()
-      - [Code Functions]()
+      - [Introduction](https://github.com/irhesri/Smart-Irrigation-System/tree/main?tab=readme-ov-file#1-introduction-7)
+      - [Specifications](https://github.com/irhesri/Smart-Irrigation-System/tree/main?tab=readme-ov-file#2-specifications-7)
+      - [Mounting](https://github.com/irhesri/Smart-Irrigation-System/tree/main?tab=readme-ov-file#3-mounting-7)
+      - [Code Functions](https://github.com/irhesri/Smart-Irrigation-System/tree/main?tab=readme-ov-file#4-code-functions-7)
       
     </details>
-
+    <details>
+      <summary> <a href="https://github.com/irhesri/Smart-Irrigation-System/tree/main?tab=readme-ov-file#ii--ch340-adapter"> CH340 Adapter </a> </summary>
+      
+      - [Introduction](https://github.com/irhesri/Smart-Irrigation-System/tree/main?tab=readme-ov-file#1-introduction-8)
+      - [Mounting](https://github.com/irhesri/Smart-Irrigation-System/tree/main?tab=readme-ov-file#2-mounting)
+    </details>
+    
   - [Mounting]()
     
-- [System Mounting]()
 - [Notes](https://github.com/irhesri/Smart-Irrigation-System/tree/main#memo-note)
 
 # Part 1: Irrigation System
@@ -533,12 +538,11 @@ The CH340 is a USB to serial converter chip commonly used in microcontroller app
   <p align="center">
     <img alt="ESP8266 CH340 mounting" src="">
   </p>
-   
-# System Mounting
+  
+## Mounting:
   <p align="center">
     <img alt="System Mounting" src="https://github.com/irhesri/Smart-Irrigation-System/blob/main/Schems/_Result.png">
   </p>
-  
 
 ># :memo: Note:
 > 
