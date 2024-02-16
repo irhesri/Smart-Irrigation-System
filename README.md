@@ -106,8 +106,7 @@
       - [Introduction](https://github.com/irhesri/Smart-Irrigation-System/tree/main?tab=readme-ov-file#1-introduction-8)
       - [Mounting](https://github.com/irhesri/Smart-Irrigation-System/tree/main?tab=readme-ov-file#2-mounting)
     </details>
-    
-  - [Mounting]()
+  - [Mounting](https://github.com/irhesri/Smart-Irrigation-System/tree/main?tab=readme-ov-file#mounting-3)
     
 - [Notes](https://github.com/irhesri/Smart-Irrigation-System/tree/main#memo-note)
 
