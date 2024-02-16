@@ -87,7 +87,23 @@
     </details>
 
   - [Mounting](https://github.com/irhesri/Smart-Irrigation-System/tree/main?tab=readme-ov-file#mounting-2)
-  
+
+- [Part 4:]()
+  - [Equipments]()
+
+    <details>
+      <summary> <a href="">  </a> </summary>
+      
+      - [Introduction]()
+      - [Specifications]()
+      - [Mounting]()
+      - [Code Functions]()
+      
+    </details>
+
+  - [Mounting]()
+    
+- [System Mounting]()
 - [Notes](https://github.com/irhesri/Smart-Irrigation-System/tree/main#memo-note)
 
 # Part 1: Irrigation System
@@ -440,6 +456,89 @@ x between 0 - 255.
 >⚠️ Attention:
 >
 >Prior to initiating the system, the HC-SR04 should be positioned atop the tank, and the tank must be empty.
+
+# Part4: Integrating IoT with Project Components
+During this phase, our objective was to seamlessly link all previously developed systems, while integrating IoT through the inclusion of an ESP01 module. This component plays a pivotal role in integrating communication with the cloud, specifically leveraging the Blynk cloud platform. This strategic maneuver facilitates extended connectivity, granting the ability to remotely monitor and control the system.
+
+## Equipments
+
+### I- ESP8266 - ESP01:
+>>>>>>>>>> ---
+   #### *1. Introduction:*
+
+  <p align="center">
+    <img alt="ESP8266" src="https://github.com/irhesri/Smart-Irrigation-System/blob/main/Part4%3A%20Integrating%20IoT%20with%20Project%20Components/Equipements/ESP8266.jpg">
+  </p>
+  The ESP8266 ESP-01 is a compact and affordable Wi-Fi module used for adding wireless connectivity to electronic projects. It's part of the ESP8266 family and is popular for IoT applications due to its small size, low cost, and ease of use.
+  
+   #### *2. Specifications:*
+   - Required voltage for working: 3.3V
+   - Protocol: TCP/IP
+   - Serial/UART baud rate: 115200 bps
+
+   #### *3. Mounting:*
+
+  <p align="center">
+    <img alt="ESP8266 mounting" src="https://github.com/irhesri/Smart-Irrigation-System/blob/main/Part4%3A%20Integrating%20IoT%20with%20Project%20Components/Equipements/ESP8266%20ESP-01.png">
+  </p>
+   
+  #### *4. Code Functions:*
+- Print data to the ESP8266 serial monitor:
+```ino
+espSerial.println(data);
+```
+
+- Read bytes from the ESP8266 serial port into a buffer with a specified buffer size:
+```ino
+espSerial.readBytes(buffer, bufferSize);
+```
+  #### *5. Blynk Functions:*
+- Initialize Blynk with authentication token, Wi-Fi network name, and password:
+```ino
+  Blynk.begin(BLYNK_AUTH_TOKEN, ssid, pass);
+```
+
+- Check if the device is currently connected to the Blynk server:
+```ino
+  Blynk.connected();
+```
+
+- Execute the Blynk main processing loop:
+```ino
+  Blynk.run();
+```
+
+- Send data to a virtual pin in the Blynk app:
+```ino
+Blynk.virtualWrite(PIN, data);
+```
+
+- Handle a virtual pin write event in the Blynk app:
+```ino
+BLYNK_WRITE(PIN)
+{}
+```
+   
+### II- CH340 Adapter:
+>>>>>>>>>> ---
+   #### *1. Introduction:*
+
+  <p align="center">
+    <img alt="CH340" src="https://github.com/irhesri/Smart-Irrigation-System/blob/main/Part4%3A%20Integrating%20IoT%20with%20Project%20Components/Equipements/ESP01CH340.jpg">
+  </p>
+The CH340 is a USB to serial converter chip commonly used in microcontroller applications. When paired with the ESP01 module, it enables easy communication between the module and other devices via USB, enhancing functionality in IoT and embedded systems projects.
+
+   #### *2. Mounting:*
+
+  <p align="center">
+    <img alt="ESP8266 CH340 mounting" src="">
+  </p>
+   
+# System Mounting
+  <p align="center">
+    <img alt="System Mounting" src="https://github.com/irhesri/Smart-Irrigation-System/blob/main/Schems/_Result.png">
+  </p>
+  
 
 ># :memo: Note:
 > 
