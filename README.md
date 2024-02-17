@@ -1,6 +1,7 @@
 # Smart Irrigation System
 
 # Project Overview:
+A cutting-edge solution for precision agriculture. With real-time air data displayed on an LCD screen, LED indicators for water level in tanks, and seamless cloud connectivity for remote monitoring, our system ensures optimal irrigation management.
 
 # Table of Contents
 
