@@ -555,17 +555,33 @@ The CH340 is a USB to serial converter chip commonly used in microcontroller app
 
 # Results:
 ## IOT integration:
-![IOT](https://github.com/irhesri/Smart-Irrigation-System/blob/main/Videos/IOT.gif)
+<p align="center">
+  <img alt="IOT" src="https://github.com/irhesri/Smart-Irrigation-System/blob/main/Videos/IOT.gif">
+</p>
+
 ___
+
 ## Air temperature & humidity
-![Air temperature & humidity](https://github.com/irhesri/Smart-Irrigation-System/blob/main/Videos/Data.gif)
+<p align="center">
+  <img alt="Air temperature & humidity" src="https://github.com/irhesri/Smart-Irrigation-System/blob/main/Videos/Data.gif">
+</p>
+
 ___
+
 ## Water Level
-![Water Level](https://github.com/irhesri/Smart-Irrigation-System/blob/main/Videos/Water%20Level.gif)
+<p align="center">
+  <img alt="Water Level" src="https://github.com/irhesri/Smart-Irrigation-System/blob/main/Videos/Water%20Level.gif">
+</p>
+
 ___
+
 ## Pump
-![Pump](https://github.com/irhesri/Smart-Irrigation-System/blob/main/Videos/pump.gif)
+<p align="center">
+  <img alt="Pump" src="https://github.com/irhesri/Smart-Irrigation-System/blob/main/Videos/pump.gif">
+</p>
+
 ___
+
 ># :memo: Note:
 > 
 >The schems are made using [fritzing](https://fritzing.org/download/).
