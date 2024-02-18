@@ -145,6 +145,7 @@ This sensor employs two probes to transmit current through the soil and subseque
 
   #### *4. Code Functions:*
 In order to use our moisture sensors it is necessary for us to perform a calibration process. It appears that each of these devices possesses its qualities and even sensors obtained from the same batch may have varying characteristics.
+
   :bulb: **Sensor Calibration**:
 Calibration is a straightforward procedure involving determining the sensor's analog output under two conditions:
 Dry Value - Exposed to air with minimal humidity.
@@ -586,4 +587,4 @@ ___
 > 
 >The schems are made using [fritzing](https://fritzing.org/download/).
 > 
-> The material and the images are from [micro-planet](https://www.micro-planet.ma/produit/module-wifi-esp8266-esp-01/) and [marocproduit](https://marocproduits.com/)
+> The material and the images are from [micro-planet](https://www.micro-planet.ma) and [marocproduit](https://marocproduits.com/)
