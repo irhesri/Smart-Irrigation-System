@@ -543,14 +543,11 @@ BLYNK_WRITE(PIN)
   </p>
 The CH340 is a USB to serial converter chip commonly used in microcontroller applications. When paired with the ESP01 module, it enables easy communication between the module and other devices via USB, enhancing functionality in IoT and embedded systems projects.
 
-   #### *2. Mounting:*
-
-  <p align="center">
-    <img alt="ESP8266 CH340 mounting" src="">
-  </p>
-
 > #### 📝 Note:
 > You need to install [CH34xSER driver](https://github.com/juliagoda/CH341SER) to program the CH340 Adapter.
+> 
+> To program your ESP follow the next [tutorial](https://aibegins.net/2020/08/09/program-an-esp01-the-easy-way/).
+
   
 ## Mounting:
   <p align="center">
