@@ -108,7 +108,13 @@ A cutting-edge solution for precision agriculture. With real-time air data displ
       - [Mounting](https://github.com/irhesri/Smart-Irrigation-System/tree/main?tab=readme-ov-file#2-mounting)
     </details>
   - [Mounting](https://github.com/irhesri/Smart-Irrigation-System/tree/main?tab=readme-ov-file#mounting-3)
-    
+
+- [Results]()
+  - [IOT integration]()
+  - [Air temperature & humidity]()
+  - [Water Level]()
+  - [Pump]()
+
 - [Notes](https://github.com/irhesri/Smart-Irrigation-System/tree/main#memo-note)
 
 # Part 1: Irrigation System
@@ -543,6 +549,19 @@ The CH340 is a USB to serial converter chip commonly used in microcontroller app
   <p align="center">
     <img alt="System Mounting" src="https://github.com/irhesri/Smart-Irrigation-System/blob/main/Schems/_Result.png">
   </p>
+
+# Results:
+## IOT integration:
+![IOT](https://github.com/irhesri/Smart-Irrigation-System/blob/main/Videos/IOT.gif)
+
+## Air temperature & humidity
+![Air temperature & humidity](https://github.com/irhesri/Smart-Irrigation-System/blob/main/Videos/Data.gif)
+
+## Water Level
+![Water Level](https://github.com/irhesri/Smart-Irrigation-System/blob/main/Videos/Water%20Level.gif)
+
+## Pump
+![Pump](https://github.com/irhesri/Smart-Irrigation-System/blob/main/Videos/pump.gif)
 
 ># :memo: Note:
 > 
