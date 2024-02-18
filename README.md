@@ -148,8 +148,11 @@ In order to use our moisture sensors it is necessary for us to perform a calibra
 
   :bulb: **Sensor Calibration**:
 Calibration is a straightforward procedure involving determining the sensor's analog output under two conditions:
+
 Dry Value - Exposed to air with minimal humidity.
+
 Wet Value - Completely submerged in water.
+
 - The calibration code is quite simple. In our code, we merely read the sensor value and print it to the serial monitor. After a brief pause, we repeat the entire process:
   
   ``` ino
