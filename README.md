@@ -544,6 +544,9 @@ The CH340 is a USB to serial converter chip commonly used in microcontroller app
   <p align="center">
     <img alt="ESP8266 CH340 mounting" src="">
   </p>
+
+> #### 📝 Note:
+> You need to install [CH34xSER driver](https://github.com/juliagoda/CH341SER) to program the CH340 Adapter.
   
 ## Mounting:
   <p align="center">
